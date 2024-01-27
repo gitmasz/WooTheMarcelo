@@ -18,6 +18,23 @@
 defined( 'ABSPATH' ) || exit;
 
 get_header( 'shop' );
+?>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-4 order-2 order-md-1">
+<?php
+
+/**
+ * Hook: woocommerce_sidebar.
+ *
+ * @hooked woocommerce_get_sidebar - 10
+ */
+do_action( 'woocommerce_sidebar' );
+
+?>
+    </div>
+    <div class="col-lg-9 col-md-8 order-1 order-md-2">
+<?php
 
 /**
  * Hook: woocommerce_before_main_content.
@@ -95,11 +112,10 @@ if ( woocommerce_product_loop() ) {
  */
 do_action( 'woocommerce_after_main_content' );
 
-/**
- * Hook: woocommerce_sidebar.
- *
- * @hooked woocommerce_get_sidebar - 10
- */
-do_action( 'woocommerce_sidebar' );
+?>
+    </div>
+  </div>
+</div>
+<?php
 
 get_footer( 'shop' );
