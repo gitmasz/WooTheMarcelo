@@ -10,7 +10,8 @@ add_action( 'wp_enqueue_scripts', 'woothe_marcelo_scripts' );
 function woothe_marcelo_config(){
 	register_nav_menus(
 		array(
-			'woothe_marcelo_main_menu' 	=> __('Main Menu', 'woothe-marcelo')
+			'woothe_marcelo_main_menu' 	=> __('Main Menu', 'woothe-marcelo'),
+      'woothe_marcelo_footer_menu' 	=> __('Footer Menu', 'woothe-marcelo')
 		)
 	);
 }

@@ -11,7 +11,11 @@
 <body <?php body_class(); ?>>
 	<div id="page" class="site">
 		<header>
-			<section class="search">Search</section>
+			<section class="search">
+				<div class="container">
+					Search
+				</div>
+			</section>
 			<section class="top-bar">
 				<div class="container">
 					<div class="row">
