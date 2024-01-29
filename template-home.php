@@ -27,7 +27,7 @@ get_header(); ?>
 						<div class="row">Deal of the Week</div>
 					</div>
 				</section>
-				<section class="lab-blog">
+				<section class="blog">
 					<div class="container">
 						<div class="row">
 							<?php 
