@@ -37,4 +37,6 @@ function woothe_marcelo_config(){
 }
 add_action( 'after_setup_theme', 'woothe_marcelo_config', 0 );
 
-require get_template_directory() . '/inc/woocommerce-modifications.php';
+if( class_exists( 'WooCommerce' )){
+	require get_template_directory() . '/inc/woocommerce-modifications.php';
+}
