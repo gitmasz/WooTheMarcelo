@@ -133,6 +133,15 @@ body{
   margin: 0; 
 }
 
+.main-menu .dropdown:hover>.dropdown-menu, 
+.main-menu .dropup:hover>.dropdown-menu  {
+  display: block;
+}
+
+.main-menu .navbar-toggler-icon {
+  background-image: url('img/hamburger-menu.svg');
+}
+
 /* Footer - Footer Menu */
 
 .footer-menu ul, .footer-widgets ul{ 
