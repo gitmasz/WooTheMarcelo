@@ -9,6 +9,107 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: e-commerce, custom-menu, custom-logo, featured-images, footer-widgets, theme-options, translation-ready, blog, right-sidebar, sticky-post, threaded-comments
 */
 
+/* rajdhani-light - latin */
+
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('fonts/rajdhani/Rajdhani-Light.eot');
+  src: local(''),
+       url('fonts/rajdhani/Rajdhani-Light.eot?#iefix') format('embedded-opentype'),
+       url('fonts/rajdhani/Rajdhani-Light.woff2') format('woff2'),
+       url('fonts/rajdhani/Rajdhani-Light.woff') format('woff'),
+       url('fonts/rajdhani/Rajdhani-Light.ttf') format('truetype'),
+       url('fonts/rajdhani/Rajdhani-Light.svg#OpenSans') format('svg');
+}
+
+/* rajdhani-regular - latin */
+
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/rajdhani/Rajdhani-Regular.eot');
+  src: local(''),
+       url('fonts/rajdhani/Rajdhani-Regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/rajdhani/Rajdhani-Regular.woff2') format('woff2'),
+       url('fonts/rajdhani/Rajdhani-Regular.woff') format('woff'),
+       url('fonts/rajdhani/Rajdhani-Regular.ttf') format('truetype'),
+       url('fonts/rajdhani/Rajdhani-Regular.svg#OpenSans') format('svg');
+}
+
+/* rajdhani-medium - latin */
+
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('fonts/rajdhani/Rajdhani-Medium.eot');
+  src: local(''),
+       url('fonts/rajdhani/Rajdhani-Medium.eot?#iefix') format('embedded-opentype'),
+       url('fonts/rajdhani/Rajdhani-Medium.woff2') format('woff2'),
+       url('fonts/rajdhani/Rajdhani-Medium.woff') format('woff'),
+       url('fonts/rajdhani/Rajdhani-Medium.ttf') format('truetype'),
+       url('fonts/rajdhani/Rajdhani-Medium.svg#OpenSans') format('svg');
+}
+
+/* rajdhani-semibold - latin */
+
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/rajdhani/Rajdhani-SemiBold.eot');
+  src: local(''),
+       url('fonts/rajdhani/Rajdhani-SemiBold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/rajdhani/Rajdhani-SemiBold.woff2') format('woff2'),
+       url('fonts/rajdhani/Rajdhani-SemiBold.woff') format('woff'),
+       url('fonts/rajdhani/Rajdhani-SemiBold.ttf') format('truetype'),
+       url('fonts/rajdhani/Rajdhani-SemiBold.svg#OpenSans') format('svg');
+}
+
+/* rajdhani-bold - latin */
+
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/rajdhani/Rajdhani-Bold.eot');
+  src: local(''),
+       url('fonts/rajdhani/Rajdhani-Bold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/rajdhani/Rajdhani-Bold.woff2') format('woff2'),
+       url('fonts/rajdhani/Rajdhani-Bold.woff') format('woff'),
+       url('fonts/rajdhani/Rajdhani-Bold.ttf') format('truetype'),
+       url('fonts/rajdhani/Rajdhani-Bold.svg#OpenSans') format('svg');
+}
+
+/* seaweed-script-regular - latin */
+
+@font-face {
+  font-family: 'Seaweed Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/seaweed-script/SeaweedScript-Regular.eot');
+  src: local(''),
+       url('fonts/seaweed-script/SeaweedScript-Regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/seaweed-script/SeaweedScript-Regular.woff2') format('woff2'),
+       url('fonts/seaweed-script/SeaweedScript-Regular.woff') format('woff'),
+       url('fonts/seaweed-script/SeaweedScript-Regular.ttf') format('truetype'),
+       url('fonts/seaweed-script/SeaweedScript-Regular.svg#OpenSans') format('svg');
+}
+
+body{
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 400;
+}
+
 /* Header - Main Menu */
 
 .main-menu{
