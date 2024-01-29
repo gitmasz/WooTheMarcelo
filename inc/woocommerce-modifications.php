@@ -32,3 +32,5 @@ add_action( 'woocommerce_after_main_content', 'woothe_marcelo_close_shop_tags', 
 function woothe_marcelo_close_shop_tags(){
 	echo '</div>';
 }
+
+add_action( 'woocommerce_after_shop_loop_item_title', 'the_excerpt', 1 );
