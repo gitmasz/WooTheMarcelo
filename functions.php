@@ -2,6 +2,8 @@
 
 require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
 
+require_once get_template_directory() . '/inc/customizer.php';
+
 function woothe_marcelo_scripts(){
 	wp_enqueue_script( 'bootstrap-4', get_template_directory_uri() . '/inc/bootstrap.min.js', array( 'jquery' ), '4.3.1', true );
   wp_enqueue_style( 'bootstrap-4', get_template_directory_uri() . '/inc/bootstrap.min.css', array(), '4.3.1', 'all' );
