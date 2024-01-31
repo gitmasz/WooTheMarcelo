@@ -24,12 +24,14 @@
 						<div class="brand col-md-3 col-12 col-lg-2 text-center text-md-left">Logo</div>
 						<div class="second-column col-md-9 col-12 col-lg-10">
 						<div class="row">
+							<?php if( class_exists( 'WooCommerce' ) ): ?>
 							<div class="account col-12">
-									<div class="cart text-right">
-										<a href="<?php echo wc_get_cart_url(); ?>"><span class="cart-icon"></span></a>
-										<span class="items"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
-									</div>
+								<div class="cart text-right">
+									<a href="<?php echo wc_get_cart_url(); ?>"><span class="cart-icon"></span></a>
+									<span class="items"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
 								</div>
+							</div>
+							<?php endif; ?>
 							<div class="col-12">
 								<nav class="main-menu navbar navbar-expand-md navbar-light" role="navigation">
 									<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
