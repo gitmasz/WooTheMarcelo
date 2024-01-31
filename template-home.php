@@ -53,14 +53,24 @@ get_header(); ?>
 					  </ul>
 					</div>
 				</section>
+				<?php 
+					$popular_limit = get_theme_mod( 'set_popular_max_num', 4 );
+					$popular_col = get_theme_mod( 'set_popular_max_col', 4 );
+				?>
 				<section class="popular-products">
 					<div class="container">
-						<div class="row">Popular Products</div>
+						<h2>Popular Products</h2>
+						<?php echo do_shortcode( '[products limit=" ' . $popular_limit . ' " columns=" ' . $popular_col . ' " orderby="popularity"]' ); ?>
 					</div>
 				</section>
+				<?php 
+					$arrivals_limit = get_theme_mod( 'set_new_arrivals_max_num', 4 );
+					$arrivals_col = get_theme_mod( 'set_new_arrivals_max_col', 4 );
+				?>
 				<section class="new-arrivals">
 					<div class="container">
-						<div class="row">New Arrivals</div>
+						<h2>New Arrivals</h2>
+						<?php echo do_shortcode( '[products limit=" ' . $arrivals_limit . ' " columns=" ' . $arrivals_col . ' " orderby="date"]' ); ?>
 					</div>
 				</section>
 				<section class="deal-of-the-week">
