@@ -33,6 +33,13 @@ function woothe_marcelo_config(){
 	add_theme_support( 'wc-product-gallery-lightbox' );
 	add_theme_support( 'wc-product-gallery-slider' );
 
+	add_theme_support( 'custom-logo', array(
+		'height'      => 46,
+		'width'       => 160,
+		'flex-height' => true,
+		'flex-width'  => true,
+	) );
+
 	if ( ! isset( $content_width ) ) {
 		$content_width = 600;
 	}		
