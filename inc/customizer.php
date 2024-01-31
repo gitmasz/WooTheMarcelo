@@ -239,6 +239,26 @@ function woothe_marcelo_customizer($wp_customize) {
     )
   );
 
+  // Popular Products Title
+  $wp_customize->add_setting(
+    'set_popular_title',
+    array(
+      'type'              => 'theme_mod',
+      'default'           => '',
+      'sanitize_callback' => 'sanitize_text_field'
+    )
+  );
+
+  $wp_customize->add_control(
+    'set_popular_title',
+    array(
+      'label'       => 'Popular Products Title',
+      'description' => 'Popular Products Title',
+      'section'     => 'sec_home_page',
+      'type'        => 'text'
+    )
+  );
+
   // Popular Products Limit
 
   $wp_customize->add_setting(
@@ -278,6 +298,26 @@ function woothe_marcelo_customizer($wp_customize) {
       'description' => 'Popular Products Max Columns',
       'section'     => 'sec_home_page',
       'type'        => 'number'
+    )
+  );
+
+  // New Arrivals Title
+  $wp_customize->add_setting(
+    'set_new_arrivals_title',
+    array(
+      'type'              => 'theme_mod',
+      'default'           => '',
+      'sanitize_callback' => 'sanitize_text_field'
+    )
+  );
+
+  $wp_customize->add_control(
+    'set_new_arrivals_title',
+    array(
+      'label'       => 'New Arrivals Title',
+      'description' => 'New Arrivals Title',
+      'section'     => 'sec_home_page',
+      'type'        => 'text'
     )
   );
 
@@ -339,6 +379,26 @@ function woothe_marcelo_customizer($wp_customize) {
       'label'   => 'Show Deal of the Week?',
       'section' => 'sec_home_page',
       'type'    => 'checkbox'
+    )
+  );
+
+  // Deal of the Week Title
+  $wp_customize->add_setting(
+    'set_deal_title',
+    array(
+      'type'              => 'theme_mod',
+      'default'           => '',
+      'sanitize_callback' => 'sanitize_text_field'
+    )
+  );
+
+  $wp_customize->add_control(
+    'set_deal_title',
+    array(
+      'label'       => 'Deal of the Week Title',
+      'description' => 'Deal of the Week Title',
+      'section'     => 'sec_home_page',
+      'type'        => 'text'
     )
   );
 
