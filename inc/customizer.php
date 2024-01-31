@@ -239,6 +239,8 @@ function woothe_marcelo_customizer($wp_customize) {
     )
   );
 
+  // Popular Products Limit
+
   $wp_customize->add_setting(
     'set_popular_max_num',
     array(
@@ -257,6 +259,8 @@ function woothe_marcelo_customizer($wp_customize) {
       'type'        => 'number'
     )
   );
+
+  // Popular Products Columns
 
   $wp_customize->add_setting(
     'set_popular_max_col',
@@ -277,6 +281,7 @@ function woothe_marcelo_customizer($wp_customize) {
     )
   );
 
+  // New Arrivals Limit
 
   $wp_customize->add_setting(
     'set_new_arrivals_max_num',
@@ -297,6 +302,8 @@ function woothe_marcelo_customizer($wp_customize) {
     )
   );
 
+  // New Arrivals Columns
+
   $wp_customize->add_setting(
     'set_new_arrivals_max_col',
     array(
@@ -311,6 +318,46 @@ function woothe_marcelo_customizer($wp_customize) {
     array(
       'label'       => 'New Arrivals Max Columns',
       'description' => 'New Arrivals Max Columns',
+      'section'     => 'sec_home_page',
+      'type'        => 'number'
+    )
+  );
+
+  // Deal of the Week Checkbox
+
+  $wp_customize->add_setting(
+    'set_deal_show',
+    array(
+      'type'              => 'theme_mod',
+      'default'           => '',
+    )
+  );
+
+  $wp_customize->add_control(
+    'set_deal_show',
+    array(
+      'label'   => 'Show Deal of the Week?',
+      'section' => 'sec_home_page',
+      'type'    => 'checkbox'
+    )
+  );
+
+  // Deal of the Week Product ID
+
+  $wp_customize->add_setting(
+    'set_deal',
+    array(
+      'type'              => 'theme_mod',
+      'default'           => '',
+      'sanitize_callback' => 'absint'
+    )
+  );
+
+  $wp_customize->add_control(
+    'set_deal',
+    array(
+      'label'       => 'Deal of the Week Product ID',
+      'description' => 'Product ID to Display',
       'section'     => 'sec_home_page',
       'type'        => 'number'
     )

@@ -59,7 +59,9 @@ get_header(); ?>
 				?>
 				<section class="popular-products">
 					<div class="container">
-						<h2>Popular Products</h2>
+						<div class="section-title">
+							<h2>Popular Products</h2>
+						</div>
 						<?php echo do_shortcode( '[products limit=" ' . $popular_limit . ' " columns=" ' . $popular_col . ' " orderby="popularity"]' ); ?>
 					</div>
 				</section>
@@ -69,15 +71,63 @@ get_header(); ?>
 				?>
 				<section class="new-arrivals">
 					<div class="container">
-						<h2>New Arrivals</h2>
+						<div class="section-title">
+							<h2>New Arrivals</h2>
+						</div>
 						<?php echo do_shortcode( '[products limit=" ' . $arrivals_limit . ' " columns=" ' . $arrivals_col . ' " orderby="date"]' ); ?>
 					</div>
 				</section>
+				<?php 
+					$showdeal = get_theme_mod( 'set_deal_show', 0 );
+					$deal     = get_theme_mod( 'set_deal' );
+					$currency = get_woocommerce_currency_symbol();
+					$regular  = get_post_meta( $deal, '_regular_price', true );
+					$sale     = get_post_meta( $deal, '_sale_price', true );
+
+					if( $showdeal == 1 && ( !empty( $deal ) ) ):
+						$discount_percentage = absint( 100 - ( ( $sale/$regular ) * 100 ) );
+				?>
 				<section class="deal-of-the-week">
 					<div class="container">
-						<div class="row">Deal of the Week</div>
+						<div class="section-title">
+							<h2>Deal of the Week</h2>
+						</div>
+						<div class="row d-flex align-items-center">
+							<div class="deal-img col-md-6 col-12 ml-auto text-center">
+								<?php echo get_the_post_thumbnail( $deal, 'large', array( 'class' => 'img-fluid' ) ); ?>
+							</div>
+							<div class="deal-desc col-md-4 col-12 mr-auto text-center">
+								<?php if( !empty( $sale ) ): ?>
+									<span class="discount">
+										<?php echo $discount_percentage . '% OFF'; ?>
+									</span>
+								<?php endif; ?>
+								<h3>
+									<a href="<?php echo get_permalink( $deal ); ?>"><?php echo get_the_title( $deal ); ?></a>
+								</h3>
+								<p><?php echo get_the_excerpt( $deal ); ?></p>
+								<div class="prices">
+									<span class="regular">
+										<?php 
+										echo $currency;
+										echo $regular;
+										?>
+									</span>
+									<?php if( !empty( $sale ) ): ?>
+										<span class="sale">
+											<?php 
+											echo $currency;
+											echo $sale;
+											?>										
+										</span>
+									<?php endif; ?>
+								</div>
+								<a href="<?php echo esc_url( '?add-to-cart=' . $deal ); ?>" class="add-to-cart">Add to Cart</a>
+							</div>
+						</div>
 					</div>
 				</section>
+				<?php endif; ?>
 				<section class="blog">
 					<div class="container">
 						<div class="row">
