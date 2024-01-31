@@ -8,6 +8,10 @@ function woothe_marcelo_scripts(){
 	wp_enqueue_script( 'bootstrap-4', get_template_directory_uri() . '/inc/bootstrap.min.js', array( 'jquery' ), '4.3.1', true );
   wp_enqueue_style( 'bootstrap-4', get_template_directory_uri() . '/inc/bootstrap.min.css', array(), '4.3.1', 'all' );
   wp_enqueue_style( 'woothe-marcelo', get_stylesheet_uri(), array(), filemtime( get_template_directory() . '/style.css' ), 'all' );
+
+	wp_enqueue_script( 'flexslider', get_template_directory_uri() . '/inc/flexslider/jquery.flexslider-min.js', array( 'jquery' ), '', true );
+	wp_enqueue_style( 'flexslider', get_template_directory_uri() . '/inc/flexslider/flexslider.css', array(), '', 'all' );
+	wp_enqueue_script( 'flexslider-config', get_template_directory_uri() . '/inc/flexslider/flexslider.js', array( 'jquery' ), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'woothe_marcelo_scripts' );
 
@@ -41,6 +45,8 @@ function woothe_marcelo_config(){
 		'flex-height' => true,
 		'flex-width'  => true,
 	) );
+
+	add_image_size( 'woothe-marcelo-slider', 1920, 800, array( 'center', 'center' ) );
 
 	if ( ! isset( $content_width ) ) {
 		$content_width = 600;
