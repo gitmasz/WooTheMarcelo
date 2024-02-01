@@ -14,7 +14,6 @@ get_header(); ?>
 							for ($i=1; $i < 4; $i++) : 
 								$slider_page[$i]        = get_theme_mod( 'set_slider_page' . $i );
 								$slider_button_text[$i] = get_theme_mod( 'set_slider_button_text' . $i ); 
-								$slider_button_url[$i]  = get_theme_mod( 'set_slider_button_url' . $i );
 							endfor;
 
 							$args = array(
@@ -25,7 +24,7 @@ get_header(); ?>
 							);
 	
 							$slider_loop = new WP_Query( $args );
-							$j = 1;
+							$slider_loop_num = 1;
 							if( $slider_loop->have_posts() ):
 								while( $slider_loop->have_posts() ):
 									$slider_loop->the_post();
@@ -38,14 +37,14 @@ get_header(); ?>
 						      		<h1><?php the_title(); ?></h1>
 						      	</div>
 						      	<div class="slider-description">
-						      		<div class="subtitle"><?php the_content(); ?></div>
-						      		<a class="link" href="<?php echo $slider_button_url[$j]; ?>"><?php echo $slider_button_text[$j]; ?></a>
+						      		<div class="excerpt"><?php echo get_the_excerpt(); ?></div>
+						      		<a class="link" href="<?php echo the_permalink(); ?>"><?php echo $slider_button_text[$slider_loop_num]; ?></a>
 						      	</div>
 						      </div>
 						    </div>
 					    </li>
 						<?php 
-								$j++;
+								$slider_loop_num++;
 								endwhile;
 								wp_reset_postdata();
 							endif;

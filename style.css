@@ -337,7 +337,7 @@ display: block;
   font-size: 3.7rem;
 }
 
-.slider-details-container .subtitle{
+.slider-details-container .excerpt {
   font-size: 1.3em;
   margin-bottom: 15px;        
 }
@@ -391,7 +391,7 @@ display: block;
       font-size: 2em;
   }
 
-  .slider-details-container .subtitle {
+  .slider-details-container .excerpt {
       font-size: 1em;
   }
 
@@ -1194,7 +1194,7 @@ p, ul li a, .nav-links a, .nav-links span{
     font-size: 2em;
   }
 
-  .slider-details-container .subtitle {
+  .slider-details-container .excerpt {
     font-size: 1em;
   }
 
