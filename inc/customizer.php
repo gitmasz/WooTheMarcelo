@@ -423,6 +423,27 @@ function woothe_marcelo_customizer($wp_customize) {
     )
   );
 
+  // Blog Title
+
+  $wp_customize->add_setting(
+    'set_blog_title',
+    array(
+      'type'              => 'theme_mod',
+      'default'           => '',
+      'sanitize_callback' => 'sanitize_text_field'
+    )
+  );
+
+  $wp_customize->add_control(
+    'set_blog_title',
+    array(
+      'label'       => 'Blog Section Title',
+      'description' => 'Blog Section Title',
+      'section'     => 'sec_home_page',
+      'type'        => 'text'
+    )
+  );	
+
 }
 
 add_action('customize_register', 'woothe_marcelo_customizer');

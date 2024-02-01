@@ -132,17 +132,36 @@ get_header(); ?>
 				<?php endif; ?>
 				<section class="blog">
 					<div class="container">
+						<div class="section-title">
+							<h2><?php echo get_theme_mod( 'set_blog_title', 'News From Our Blog' ); ?></h2>
+						</div>						
 						<div class="row">
 							<?php 
-								if( have_posts() ):
-									while( have_posts() ): the_post();
+							$args = array(
+								'post_type'      => 'post',
+								'posts_per_page' => 2,
+							);
+							$blog_posts = new WP_Query( $args );
+
+							if( $blog_posts->have_posts() ):
+								while( $blog_posts->have_posts() ): $blog_posts->the_post();
+							?>
+								<article class="col-12 col-md-6">
+									<a href="<?php the_permalink(); ?>">
+										<?php 
+										if( has_post_thumbnail() ):
+											the_post_thumbnail( 'woothe-marcelo-blog', array( 'class' => 'img-fluid' ) );
+										endif;
 										?>
-											<article>
-												<h2><?php the_title(); ?></h2>
-												<div><?php the_content(); ?></div>
-											</article>
-										<?php
+									</a>
+									<h3>
+										<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+									</h3>
+									<div class="excerpt"><?php the_excerpt(); ?></div>
+								</article>
+							<?php
 									endwhile;
+									wp_reset_postdata();
 								else:
 							?>
 								<p>Nothing to display.</p>

@@ -46,7 +46,9 @@ function woothe_marcelo_config(){
 		'flex-width'  => true,
 	) );
 
+	add_theme_support( 'post-thumbnails' );
 	add_image_size( 'woothe-marcelo-slider', 1920, 800, array( 'center', 'center' ) );
+	add_image_size( 'woothe-marcelo-blog', 960, 640, array( 'center', 'center' ) );
 
 	if ( ! isset( $content_width ) ) {
 		$content_width = 600;
