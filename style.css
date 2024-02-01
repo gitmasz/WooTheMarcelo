@@ -573,6 +573,30 @@ display: block;
   margin-top: 10px;
 }
 
+/* Blog Section */
+
+.blog img{
+  margin: 15px 0;
+}
+
+.blog h3{
+  margin-bottom: 0;
+}
+
+.blog h3 a{
+  color: #d83a65;  
+  font-weight: 700;      
+}
+
+.blog .pub-date{
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.blog .excerpt{
+  color: #848484;
+}
+
 /* Footer - Footer Menu */
 
 .footer-menu ul, .footer-widgets ul{ 
