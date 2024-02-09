@@ -16,23 +16,27 @@ function woothe_marcelo_scripts(){
 add_action( 'wp_enqueue_scripts', 'woothe_marcelo_scripts' );
 
 function woothe_marcelo_config(){
+  $textdomain = 'woothe-marcelo';
+  load_theme_textdomain( $textdomain, get_stylesheet_directory() . '/languages/' );
+  load_theme_textdomain( $textdomain, get_template_directory() . '/languages/' );
+
   register_nav_menus(
     array(
       'woothe_marcelo_main_menu'   => __('Main Menu', 'woothe-marcelo'),
-      'woothe_marcelo_footer_menu'   => __('Footer Menu', 'woothe-marcelo')
+      'woothe_marcelo_footer_menu' => __('Footer Menu', 'woothe-marcelo')
     )
   );
 
   add_theme_support( 'woocommerce', array(
     'thumbnail_image_width' => 255,
-    'single_image_width'  => 255,
-    'product_grid'       => array(
-            'default_rows'    => 10,
-            'min_rows'        => 5,
-            'max_rows'        => 10,
-            'default_columns' => 1,
-            'min_columns'     => 1,
-            'max_columns'     => 1,        
+    'single_image_width'    => 255,
+    'product_grid'          => array(
+      'default_rows'        => 10,
+      'min_rows'            => 5,
+      'max_rows'            => 10,
+      'default_columns'     => 1,
+      'min_columns'         => 1,
+      'max_columns'         => 1,        
     )
   ) );
   add_theme_support( 'wc-product-gallery-zoom' );

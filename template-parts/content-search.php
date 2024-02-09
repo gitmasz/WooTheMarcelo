@@ -5,7 +5,7 @@
   <div class="post-thumbnail">
     <?php
     if (has_post_thumbnail()) :
-      the_post_thumbnail('fancy-lab-blog', array('class' => 'img-fluid'));
+      the_post_thumbnail('woothe-marcelo-blog', array('class' => 'img-fluid'));
     endif;
     ?>
   </div>
