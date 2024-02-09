@@ -52,7 +52,9 @@ function woothe_marcelo_config(){
 
 	if ( ! isset( $content_width ) ) {
 		$content_width = 600;
-	}		
+	}
+
+	add_theme_support( 'title-tag' );
 }
 add_action( 'after_setup_theme', 'woothe_marcelo_config', 0 );
 
