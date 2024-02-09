@@ -64,7 +64,7 @@ if( class_exists( 'WooCommerce' )){
 
 add_action( 'widgets_init', 'woothe_marcelo_sidebars' );
 function woothe_marcelo_sidebars(){
-	register_sidebar( array(
+  register_sidebar( array(
 		'name'          => 'WooThe Marcelo Main Sidebar',
 		'id'            => 'woothe-marcelo-sidebar-1',
 		'description'   => 'Drag and drop your widgets here',
@@ -72,5 +72,14 @@ function woothe_marcelo_sidebars(){
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>',
-	) );
+  ) );
+	register_sidebar( array(
+    'name'          => 'Sidebar Shop',
+    'id'            => 'woothe-marcelo-sidebar-shop',
+    'description'   => 'Drag and drop your WooCommerce widgets here',
+    'before_widget' => '<div id="%1$s" class="widget %2$s widget-wrapper">', 
+    'after_widget'  => '</div>',
+    'before_title'  => '<h4 class="widget-title">',
+    'after_title'   => '</h4>',
+  ) );
 }
