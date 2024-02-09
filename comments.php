@@ -11,7 +11,7 @@ if (post_password_required()) {
       <?php
       $comments_number = get_comments_number();
       if ('1' === $comments_number) {
-        printf(_x('One thought on &ldquo;%s&rdquo;', 'comments title', 'twentysixteen'), get_the_title());
+        printf(_x('One thought on &ldquo;%s&rdquo;', 'comments title', 'woothe-marcelo'), get_the_title());
       } else {
         printf(
           _nx(
@@ -19,7 +19,7 @@ if (post_password_required()) {
             '%1$s thoughts on &ldquo;%2$s&rdquo;',
             $comments_number,
             'comments title',
-            'twentysixteen'
+            'woothe-marcelo'
           ),
           number_format_i18n($comments_number),
           get_the_title()
@@ -50,7 +50,7 @@ if (post_password_required()) {
   <?php
     if (!comments_open() && get_comments_number() && post_type_supports(get_post_type(), 'comments')) :
   ?>
-    <p class="no-comments"><?php _e('Comments are closed.', 'twentysixteen'); ?></p>
+    <p class="no-comments"><?php _e('Comments are closed.', 'woothe-marcelo'); ?></p>
   <?php endif; ?>
 
   <?php

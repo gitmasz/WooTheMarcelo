@@ -13,13 +13,13 @@
           endwhile;
 
           the_posts_pagination(array(
-            'prev_text'    => 'Previous',
-            'next_text'    => 'Next',
+            'prev_text' => __( 'Previous', 'woothe-marcelo' ),
+            'next_text' => __( 'Next', 'woothe-marcelo' ),
           ));
 
         else :
           ?>
-          <p>Nothing to display.</p>
+          <p><?php _e( 'Nothing to display.', 'woothe-marcelo' ); ?></p>
         <?php endif; ?>
         </div>
         <?php get_sidebar(); ?>

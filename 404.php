@@ -4,14 +4,14 @@
     <div class="container">
       <div class="error-404">
         <header>
-          <h1>Page not found</h1>
-          <p>Unfortunately, the page you tried to reach does not exist on this site</p>
+          <h1><?php _e( 'Page not found', 'woothe-marcelo' ); ?></h1>
+          <p><?php _e( 'Unfortunately, the page you tried to reach does not exist on this site', 'woothe-marcelo' ); ?></p>
         </header>
         <?php
         the_widget(
           'WP_Widget_Recent_Posts',
           array(
-            'title'  => 'Take a Look at Our Latest Posts',
+            'title'  => __( 'Take a Look at Our Latest Posts', 'woothe-marcelo' ),
             'number' => 3,
           )
         );

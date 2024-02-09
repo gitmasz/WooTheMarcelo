@@ -7,8 +7,8 @@ function woothe_marcelo_customizer($wp_customize) {
   $wp_customize->add_section(
     'sec_copyright',
     array(
-      'title'       => 'Copyright Settings',
-      'description' => 'Copyright Section'
+      'title'       => __('Copyright Settings', 'woothe-marcelo'),
+      'description' => __('Copyright Section', 'woothe-marcelo'),
     )
   );
 
@@ -24,8 +24,8 @@ function woothe_marcelo_customizer($wp_customize) {
   $wp_customize->add_control(
     'set_copyright',
     array(
-      'label'       => 'Copyright',
-      'description' => 'Please, add your copyright information here',
+      'label'       => __('Copyright', 'woothe-marcelo'),
+      'description' => __('Please, add your copyright information here', 'woothe-marcelo'),
       'section'     => 'sec_copyright',
       'type'        => 'text'
     )
@@ -35,8 +35,8 @@ function woothe_marcelo_customizer($wp_customize) {
 
 	$wp_customize->add_section(
 		'sec_slider', array(
-			'title'       => 'Slider Settings',
-			'description' => 'Slider Section'
+			'title'       => __('Slider Settings', 'woothe-marcelo'),
+			'description' => __('Slider Section', 'woothe-marcelo'),
 		)
 	);
 
@@ -54,8 +54,8 @@ function woothe_marcelo_customizer($wp_customize) {
   $wp_customize->add_control(
     'set_slider_page1',
     array(
-      'label'       => 'Set slider page 1',
-      'description' => 'Set slider page 1',
+      'label'       => __('Set slider page 1', 'woothe-marcelo'),
+      'description' => __('Set slider page 1', 'woothe-marcelo'),
       'section'     => 'sec_slider',
       'type'        => 'dropdown-pages'
     )
@@ -75,8 +75,8 @@ function woothe_marcelo_customizer($wp_customize) {
   $wp_customize->add_control(
     'set_slider_button_text1',
     array(
-      'label'       => 'Button Text for Page 1',
-      'description' => 'Button Text for Page 1',
+      'label'       => __('Button Text for Page 1', 'woothe-marcelo'),
+      'description' => __('Button Text for Page 1', 'woothe-marcelo'),
       'section'     => 'sec_slider',
       'type'        => 'text'
     )
@@ -96,8 +96,8 @@ function woothe_marcelo_customizer($wp_customize) {
   $wp_customize->add_control(
     'set_slider_page2',
     array(
-      'label'       => 'Set slider page 2',
-      'description' => 'Set slider page 2',
+      'label'       => __('Set slider page 2', 'woothe-marcelo'),
+      'description' => __('Set slider page 2', 'woothe-marcelo'),
       'section'     => 'sec_slider',
       'type'        => 'dropdown-pages'
     )
@@ -117,8 +117,8 @@ function woothe_marcelo_customizer($wp_customize) {
   $wp_customize->add_control(
     'set_slider_button_text2',
     array(
-      'label'       => 'Button Text for Page 2',
-      'description' => 'Button Text for Page 2',
+      'label'       => __('Button Text for Page 2', 'woothe-marcelo'),
+      'description' => __('Button Text for Page 2', 'woothe-marcelo'),
       'section'     => 'sec_slider',
       'type'        => 'text'
     )
@@ -138,8 +138,8 @@ function woothe_marcelo_customizer($wp_customize) {
   $wp_customize->add_control(
     'set_slider_page3',
     array(
-      'label'       => 'Set slider page 3',
-      'description' => 'Set slider page 3',
+      'label'       => __('Set slider page 3', 'woothe-marcelo'),
+      'description' => __('Set slider page 3', 'woothe-marcelo'),
       'section'     => 'sec_slider',
       'type'        => 'dropdown-pages'
     )
@@ -159,8 +159,8 @@ function woothe_marcelo_customizer($wp_customize) {
   $wp_customize->add_control(
     'set_slider_button_text3',
     array(
-      'label'       => 'Button Text for Page 3',
-      'description' => 'Button Text for Page 3',
+      'label'       => __('Button Text for Page 3', 'woothe-marcelo'),
+      'description' => __('Button Text for Page 3', 'woothe-marcelo'),
       'section'     => 'sec_slider',
       'type'        => 'text'
     )
@@ -171,8 +171,8 @@ function woothe_marcelo_customizer($wp_customize) {
   $wp_customize->add_section(
     'sec_home_page',
     array(
-      'title'       => 'Home Page Products and Blog Settings',
-      'description' => 'Home Page Section'
+      'title'       => __('Home Page Products and Blog Settings', 'woothe-marcelo'),
+      'description' => __('Home Page Section', 'woothe-marcelo'),
     )
   );
 
@@ -189,8 +189,8 @@ function woothe_marcelo_customizer($wp_customize) {
   $wp_customize->add_control(
     'set_popular_title',
     array(
-      'label'       => 'Popular Products Title',
-      'description' => 'Popular Products Title',
+      'label'       => __('Popular Products Title', 'woothe-marcelo'),
+      'description' => __('Popular Products Title', 'woothe-marcelo'),
       'section'     => 'sec_home_page',
       'type'        => 'text'
     )
@@ -210,8 +210,8 @@ function woothe_marcelo_customizer($wp_customize) {
   $wp_customize->add_control(
     'set_popular_max_num',
     array(
-      'label'       => 'Popular Products Max Number',
-      'description' => 'Popular Products Max Number',
+      'label'       => __('Popular Products Max Number', 'woothe-marcelo'),
+      'description' => __('Popular Products Max Number', 'woothe-marcelo'),
       'section'     => 'sec_home_page',
       'type'        => 'number'
     )
@@ -231,8 +231,8 @@ function woothe_marcelo_customizer($wp_customize) {
   $wp_customize->add_control(
     'set_popular_max_col',
     array(
-      'label'       => 'Popular Products Max Columns',
-      'description' => 'Popular Products Max Columns',
+      'label'       => __('Popular Products Max Columns', 'woothe-marcelo'),
+      'description' => __('Popular Products Max Columns', 'woothe-marcelo'),
       'section'     => 'sec_home_page',
       'type'        => 'number'
     )
@@ -251,8 +251,8 @@ function woothe_marcelo_customizer($wp_customize) {
   $wp_customize->add_control(
     'set_new_arrivals_title',
     array(
-      'label'       => 'New Arrivals Title',
-      'description' => 'New Arrivals Title',
+      'label'       => __('New Arrivals Title', 'woothe-marcelo'),
+      'description' => __('New Arrivals Title', 'woothe-marcelo'),
       'section'     => 'sec_home_page',
       'type'        => 'text'
     )
@@ -272,8 +272,8 @@ function woothe_marcelo_customizer($wp_customize) {
   $wp_customize->add_control(
     'set_new_arrivals_max_num',
     array(
-      'label'       => 'New Arrivals Max Number',
-      'description' => 'New Arrivals Max Number',
+      'label'       => __('New Arrivals Max Number', 'woothe-marcelo'),
+      'description' => __('New Arrivals Max Number', 'woothe-marcelo'),
       'section'     => 'sec_home_page',
       'type'        => 'number'
     )
@@ -293,8 +293,8 @@ function woothe_marcelo_customizer($wp_customize) {
   $wp_customize->add_control(
     'set_new_arrivals_max_col',
     array(
-      'label'       => 'New Arrivals Max Columns',
-      'description' => 'New Arrivals Max Columns',
+      'label'       => __('New Arrivals Max Columns', 'woothe-marcelo'),
+      'description' => __('New Arrivals Max Columns', 'woothe-marcelo'),
       'section'     => 'sec_home_page',
       'type'        => 'number'
     )
@@ -305,15 +305,15 @@ function woothe_marcelo_customizer($wp_customize) {
   $wp_customize->add_setting(
     'set_deal_show',
     array(
-      'type'              => 'theme_mod',
-      'default'           => '',
+      'type'    => 'theme_mod',
+      'default' => '',
     )
   );
 
   $wp_customize->add_control(
     'set_deal_show',
     array(
-      'label'   => 'Show Deal of the Week?',
+      'label'   => __('Show Deal of the Week?', 'woothe-marcelo'),
       'section' => 'sec_home_page',
       'type'    => 'checkbox'
     )
@@ -332,8 +332,8 @@ function woothe_marcelo_customizer($wp_customize) {
   $wp_customize->add_control(
     'set_deal_title',
     array(
-      'label'       => 'Deal of the Week Title',
-      'description' => 'Deal of the Week Title',
+      'label'       => __('Deal of the Week Title', 'woothe-marcelo'),
+      'description' => __('Deal of the Week Title', 'woothe-marcelo'),
       'section'     => 'sec_home_page',
       'type'        => 'text'
     )
@@ -353,8 +353,8 @@ function woothe_marcelo_customizer($wp_customize) {
   $wp_customize->add_control(
     'set_deal',
     array(
-      'label'       => 'Deal of the Week Product ID',
-      'description' => 'Product ID to Display',
+      'label'       => __('Deal of the Week Product ID', 'woothe-marcelo'),
+      'description' => __('Product ID to Display', 'woothe-marcelo'),
       'section'     => 'sec_home_page',
       'type'        => 'number'
     )
@@ -374,8 +374,8 @@ function woothe_marcelo_customizer($wp_customize) {
   $wp_customize->add_control(
     'set_blog_title',
     array(
-      'label'       => 'Blog Section Title',
-      'description' => 'Blog Section Title',
+      'label'       => __('Blog Section Title', 'woothe-marcelo'),
+      'description' => __('Blog Section Title', 'woothe-marcelo'),
       'section'     => 'sec_home_page',
       'type'        => 'text'
     )

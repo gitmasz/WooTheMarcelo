@@ -10,14 +10,14 @@
     ?>
   </div>
   <div class="meta">
-    <p>Published by <?php the_author_posts_link(); ?> on <?php echo get_the_date(); ?>
+    <p><?php _e( 'Published by', 'woothe-marcelo' ); ?> <?php the_author_posts_link(); ?> <?php _e( 'on', 'woothe-marcelo' ); ?> <?php echo get_the_date(); ?>
       <br />
       <?php if (has_category()) : ?>
-        Categories: <span><?php the_category(' '); ?></span>
+        <?php _e( 'Categories', 'woothe-marcelo' ); ?>: <span><?php the_category(' '); ?></span>
       <?php endif; ?>
       <br />
       <?php if (has_tag()) : ?>
-        Tags: <span><?php the_tags('', ', '); ?></span>
+        <?php _e( 'Tags', 'woothe-marcelo' ); ?>: <span><?php the_tags('', ', '); ?></span>
       <?php endif; ?>
     </p>
   </div>
