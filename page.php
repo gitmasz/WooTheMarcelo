@@ -10,7 +10,7 @@
 								endwhile;
 							else:
 						?>
-							<p><?php _e( 'Nothing to display.', 'woothe-marcelo' ); ?></p>
+							<p><?php esc_html_e( 'Nothing to display.', 'woothe-marcelo' ); ?></p>
 						<?php endif; ?>
 					</div>
 				</div>

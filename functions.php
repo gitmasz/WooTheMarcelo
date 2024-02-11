@@ -22,8 +22,8 @@ function woothe_marcelo_config(){
 
   register_nav_menus(
     array(
-      'woothe_marcelo_main_menu'   => __('Main Menu', 'woothe-marcelo'),
-      'woothe_marcelo_footer_menu' => __('Footer Menu', 'woothe-marcelo')
+      'woothe_marcelo_main_menu'   => esc_html__('Main Menu', 'woothe-marcelo'),
+      'woothe_marcelo_footer_menu' => esc_html__('Footer Menu', 'woothe-marcelo')
     )
   );
 
@@ -69,45 +69,45 @@ if( class_exists( 'WooCommerce' )){
 add_action( 'widgets_init', 'woothe_marcelo_sidebars' );
 function woothe_marcelo_sidebars(){
   register_sidebar( array(
-    'name'          => __('WooThe Marcelo Main Sidebar', 'woothe-marcelo'),
+    'name'          => esc_html__('WooThe Marcelo Main Sidebar', 'woothe-marcelo'),
     'id'            => 'woothe-marcelo-sidebar-1',
-    'description'   => __('Drag and drop your widgets here', 'woothe-marcelo'),
+    'description'   => esc_html__('Drag and drop your widgets here', 'woothe-marcelo'),
     'before_widget' => '<div id="%1$s" class="widget %2$s widget-wrapper">', 
     'after_widget'  => '</div>',
     'before_title'  => '<h4 class="widget-title">',
     'after_title'   => '</h4>',
   ) );
   register_sidebar( array(
-    'name'          => __('Sidebar Shop', 'woothe-marcelo'),
+    'name'          => esc_html__('Sidebar Shop', 'woothe-marcelo'),
     'id'            => 'woothe-marcelo-sidebar-shop',
-    'description'   => __('Drag and drop your WooCommerce widgets here', 'woothe-marcelo'),
+    'description'   => esc_html__('Drag and drop your WooCommerce widgets here', 'woothe-marcelo'),
     'before_widget' => '<div id="%1$s" class="widget %2$s widget-wrapper">', 
     'after_widget'  => '</div>',
     'before_title'  => '<h4 class="widget-title">',
     'after_title'   => '</h4>',
   ) );
   register_sidebar( array(
-    'name'          => __('Footer Sidebar 1', 'woothe-marcelo'),
+    'name'          => esc_html__('Footer Sidebar 1', 'woothe-marcelo'),
     'id'            => 'woothe-marcelo-sidebar-footer1',
-    'description'   => __('Drag and drop your widgets here', 'woothe-marcelo'),
+    'description'   => esc_html__('Drag and drop your widgets here', 'woothe-marcelo'),
     'before_widget' => '<div id="%1$s" class="widget %2$s widget-wrapper">', 
     'after_widget'  => '</div>',
     'before_title'  => '<h4 class="widget-title">',
     'after_title'   => '</h4>',
   ) );
   register_sidebar( array(
-    'name'          => __('Footer Sidebar 2', 'woothe-marcelo'),
+    'name'          => esc_html__('Footer Sidebar 2', 'woothe-marcelo'),
     'id'            => 'woothe-marcelo-sidebar-footer2',
-    'description'   => __('Drag and drop your widgets here', 'woothe-marcelo'),
+    'description'   => esc_html__('Drag and drop your widgets here', 'woothe-marcelo'),
     'before_widget' => '<div id="%1$s" class="widget %2$s widget-wrapper">', 
     'after_widget'  => '</div>',
     'before_title'  => '<h4 class="widget-title">',
     'after_title'   => '</h4>',
   ) );
   register_sidebar( array(
-    'name'          => __('Footer Sidebar 3', 'woothe-marcelo'),
+    'name'          => esc_html__('Footer Sidebar 3', 'woothe-marcelo'),
     'id'            => 'woothe-marcelo-sidebar-footer3',
-    'description'   => __('Drag and drop your widgets here', 'woothe-marcelo'),
+    'description'   => esc_html__('Drag and drop your widgets here', 'woothe-marcelo'),
     'before_widget' => '<div id="%1$s" class="widget %2$s widget-wrapper">', 
     'after_widget'  => '</div>',
     'before_title'  => '<h4 class="widget-title">',

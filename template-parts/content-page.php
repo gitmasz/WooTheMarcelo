@@ -4,7 +4,7 @@
     <?php
     wp_link_pages(
       array(
-        'before' => '<p class="inner-pagination">' . 'Pages',
+        'before' => '<p class="inner-pagination">' . esc_html__( 'Pages', 'woothe-marcelo' ),
         'after'  => '</p>',
       )
     );

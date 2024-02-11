@@ -25,7 +25,7 @@
 							<?php if( has_custom_logo() ): ?>
 								<?php the_custom_logo(); ?>
 							<?php else: ?>
-								<a href="<?php echo home_url( '/' ) ?>"><?php bloginfo( 'title' ); ?></a>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'title' ); ?></a>
 								<p><?php bloginfo( 'description' ); ?></p>
 							<?php endif; ?>
 						</div>
@@ -37,27 +37,27 @@
 										<ul class="navbar-nav float-left">
 											<?php if( is_user_logged_in() ) : ?>
 											<li>
-												<a href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) ?>" class="nav-link"><?php _e( 'My Account', 'woothe-marcelo' ); ?></a>
+												<a href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) ?>" class="nav-link"><?php esc_html_e( 'My Account', 'woothe-marcelo' ); ?></a>
 											</li>
 											<li>
-												<a href="<?php echo esc_url( wp_logout_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) ) ?>" class="nav-link"><?php _e( 'Logout', 'woothe-marcelo' ); ?></a>
+												<a href="<?php echo esc_url( wp_logout_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) ) ?>" class="nav-link"><?php esc_html_e( 'Logout', 'woothe-marcelo' ); ?></a>
 											</li>
 											<?php else: ?>
 											<li>
-												<a href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) ?>" class="nav-link"><?php _e( 'Login / Register', 'woothe-marcelo' ); ?></a>
+												<a href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ) ?>" class="nav-link"><?php esc_html_e( 'Login / Register', 'woothe-marcelo' ); ?></a>
 											</li>												
 											<?php endif; ?>
 										</ul>
 									</div>
 									<div class="cart text-right">
-										<a href="<?php echo wc_get_cart_url(); ?>"><span class="cart-icon"></span></a>
-										<span class="items"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+										<a href="<?php echo esc_url( wc_get_cart_url() ); ?>"><span class="cart-icon"></span></a>
+										<span class="items"><?php echo esc_html( WC()->cart->get_cart_contents_count() ); ?></span>
 									</div>
 								</div>
 								<?php endif; ?>
 								<div class="col-12">
 									<nav class="main-menu navbar navbar-expand-md navbar-light" role="navigation">
-										<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php _e( 'Toggle navigation', 'woothe-marcelo' ); ?>">
+										<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'woothe-marcelo' ); ?>">
 											<span class="navbar-toggler-icon"></span>
 										</button>
 											<?php

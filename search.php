@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
 
-        <h1><?php _e( 'Search results for', 'woothe-marcelo' ); ?>: <?php echo get_search_query(); ?></h1>
+        <h1><?php esc_html_e( 'Search results for', 'woothe-marcelo' ); ?>: <?php echo get_search_query(); ?></h1>
 
         <?php
         get_search_form();
@@ -15,13 +15,13 @@
           endwhile;
 
           the_posts_pagination(array(
-            'prev_text' => __( 'Previous', 'woothe-marcelo' ),
-            'next_text' => __( 'Next', 'woothe-marcelo' ),
+            'prev_text' => esc_html__( 'Previous', 'woothe-marcelo' ),
+            'next_text' => esc_html__( 'Next', 'woothe-marcelo' ),
           ));
 
         else :
           ?>
-          <p><?php _e( 'There are no results for your query.', 'woothe-marcelo' ); ?></p>
+          <p><?php esc_html_e( 'There are no results for your query.', 'woothe-marcelo' ); ?></p>
         <?php endif; ?>
       </div>
     </div>
