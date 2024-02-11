@@ -1,0 +1,299 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WooThe Marcelo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-11 14:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.4.3\n"
+"X-Domain: woothe-marcelo"
+
+#: template-home.php:102
+msgid "% OFF"
+msgstr ""
+
+#: inc/class-wp-bootstrap-navwalker.php:368
+msgid "Add a menu"
+msgstr ""
+
+#: template-home.php:125
+msgid "Add to Cart"
+msgstr ""
+
+#: inc/customizer.php:377 inc/customizer.php:378
+msgid "Blog Section Title"
+msgstr ""
+
+#: inc/customizer.php:78 inc/customizer.php:79
+msgid "Button Text for Page 1"
+msgstr ""
+
+#: inc/customizer.php:120 inc/customizer.php:121
+msgid "Button Text for Page 2"
+msgstr ""
+
+#: inc/customizer.php:162 inc/customizer.php:163
+msgid "Button Text for Page 3"
+msgstr ""
+
+#: template-parts/content-archive.php:16 template-parts/content-single.php:7
+#: template-parts/content.php:16 template-parts/content-search.php:16
+msgid "Categories"
+msgstr ""
+
+#: comments.php:53
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:17
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:14
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#: inc/customizer.php:27
+msgid "Copyright"
+msgstr ""
+
+#: inc/customizer.php:11
+msgid "Copyright Section"
+msgstr ""
+
+#: inc/customizer.php:10
+msgid "Copyright Settings"
+msgstr ""
+
+#: footer.php:27
+msgid "Copyright X - All Rights Reserved"
+msgstr ""
+
+#: template-home.php:93
+msgid "Deal of the Week"
+msgstr ""
+
+#: inc/customizer.php:356
+msgid "Deal of the Week Product ID"
+msgstr ""
+
+#: inc/customizer.php:335 inc/customizer.php:336
+msgid "Deal of the Week Title"
+msgstr ""
+
+#: functions.php:74 functions.php:92 functions.php:101 functions.php:110
+msgid "Drag and drop your widgets here"
+msgstr ""
+
+#: functions.php:83
+msgid "Drag and drop your WooCommerce widgets here"
+msgstr ""
+
+#: functions.php:26
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:90
+msgid "Footer Sidebar 1"
+msgstr ""
+
+#: functions.php:99
+msgid "Footer Sidebar 2"
+msgstr ""
+
+#: functions.php:108
+msgid "Footer Sidebar 3"
+msgstr ""
+
+#. Name of the template
+msgid "Home Page"
+msgstr ""
+
+#: inc/customizer.php:174
+msgid "Home Page Products and Blog Settings"
+msgstr ""
+
+#: inc/customizer.php:175
+msgid "Home Page Section"
+msgstr ""
+
+#: header.php:47
+msgid "Login / Register"
+msgstr ""
+
+#: header.php:43
+msgid "Logout"
+msgstr ""
+
+#: functions.php:25
+msgid "Main Menu"
+msgstr ""
+
+#. Author of the theme
+msgid "Marcin Szczepkowski"
+msgstr ""
+
+#: header.php:40
+msgid "My Account"
+msgstr ""
+
+#: template-home.php:75
+msgid "New Arrivals"
+msgstr ""
+
+#: inc/customizer.php:296 inc/customizer.php:297
+msgid "New Arrivals Max Columns"
+msgstr ""
+
+#: inc/customizer.php:275 inc/customizer.php:276
+msgid "New Arrivals Max Number"
+msgstr ""
+
+#: inc/customizer.php:254 inc/customizer.php:255
+msgid "New Arrivals Title"
+msgstr ""
+
+#: template-home.php:135
+msgid "News From Our Blog"
+msgstr ""
+
+#: index.php:14 archive.php:17 search.php:19
+msgid "Next"
+msgstr ""
+
+#: template-home.php:166 index.php:18 archive.php:22 page.php:13
+msgid "Nothing to display."
+msgstr ""
+
+#: template-parts/content-archive.php:13 template-parts/content-single.php:5
+#: template-parts/content.php:13 template-parts/content-search.php:13
+msgid "on"
+msgstr ""
+
+#: 404.php:7
+msgid "Page not found"
+msgstr ""
+
+#: template-parts/content-single.php:27
+msgid "Pages"
+msgstr ""
+
+#: inc/customizer.php:28
+msgid "Please, add your copyright information here"
+msgstr ""
+
+#: template-home.php:63
+msgid "Popular products"
+msgstr ""
+
+#: inc/customizer.php:234 inc/customizer.php:235
+msgid "Popular Products Max Columns"
+msgstr ""
+
+#: inc/customizer.php:213 inc/customizer.php:214
+msgid "Popular Products Max Number"
+msgstr ""
+
+#: inc/customizer.php:192 inc/customizer.php:193
+msgid "Popular Products Title"
+msgstr ""
+
+#: index.php:13 archive.php:16 search.php:18
+msgid "Previous"
+msgstr ""
+
+#: inc/customizer.php:357
+msgid "Product ID to Display"
+msgstr ""
+
+#: template-parts/content-archive.php:13 template-parts/content-single.php:5
+#: template-parts/content.php:13 template-parts/content-search.php:13
+msgid "Published by"
+msgstr ""
+
+#: searchform.php:2
+msgid "Search &hellip;"
+msgstr ""
+
+#: search.php:7
+msgid "Search results for"
+msgstr ""
+
+#: searchform.php:3
+msgid "Search;"
+msgstr ""
+
+#: inc/customizer.php:57 inc/customizer.php:58
+msgid "Set slider page 1"
+msgstr ""
+
+#: inc/customizer.php:99 inc/customizer.php:100
+msgid "Set slider page 2"
+msgstr ""
+
+#: inc/customizer.php:141 inc/customizer.php:142
+msgid "Set slider page 3"
+msgstr ""
+
+#: inc/customizer.php:316
+msgid "Show Deal of the Week?"
+msgstr ""
+
+#: functions.php:81
+msgid "Sidebar Shop"
+msgstr ""
+
+#: inc/customizer.php:39
+msgid "Slider Section"
+msgstr ""
+
+#: inc/customizer.php:38
+msgid "Slider Settings"
+msgstr ""
+
+#: template-parts/content-archive.php:20 template-parts/content-single.php:11
+#: template-parts/content.php:20 template-parts/content-search.php:20
+msgid "Tags"
+msgstr ""
+
+#: 404.php:14
+msgid "Take a Look at Our Latest Posts"
+msgstr ""
+
+#: search.php:24
+msgid "There are no results for your query."
+msgstr ""
+
+#: header.php:60
+msgid "Toggle navigation"
+msgstr ""
+
+#: 404.php:8
+msgid "Unfortunately, the page you tried to reach does not exist on this site"
+msgstr ""
+
+#. Name of the theme
+msgid "WooThe Marcelo"
+msgstr ""
+
+#. Description of the theme
+msgid "WooThe Marcelo is a compatible WooCommerce classic theme for WordPress."
+msgstr ""
+
+#: functions.php:72
+msgid "WooThe Marcelo Main Sidebar"
+msgstr ""

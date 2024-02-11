@@ -1,5 +1,3 @@
 _assets_/
-languages/*
-!languages/.gitkeep
 *.DS_Store
 *.Thumbs.db
