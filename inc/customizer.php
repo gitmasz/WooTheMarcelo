@@ -307,6 +307,7 @@ function woothe_marcelo_customizer($wp_customize) {
     array(
       'type'    => 'theme_mod',
       'default' => '',
+      'sanitize_callback' => 'woothe_marcelo_sanitize_checkbox',
     )
   );
 
@@ -384,3 +385,7 @@ function woothe_marcelo_customizer($wp_customize) {
 }
 
 add_action('customize_register', 'woothe_marcelo_customizer');
+
+function woothe_marcelo_sanitize_checkbox( $input ){
+  return ( isset( $input ) && $input == 1 ? true : false );
+}

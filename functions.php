@@ -59,6 +59,8 @@ function woothe_marcelo_config(){
   }
 
   add_theme_support( 'title-tag' );
+
+  add_theme_support( 'automatic-feed-links' );
 }
 add_action( 'after_setup_theme', 'woothe_marcelo_config', 0 );
 
