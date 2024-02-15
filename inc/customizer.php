@@ -176,190 +176,197 @@ function woothe_marcelo_customizer($wp_customize) {
     )
   );
 
-  // Popular Products Title
-  $wp_customize->add_setting(
-    'set_popular_title',
-    array(
-      'type'              => 'theme_mod',
-      'default'           => '',
-      'sanitize_callback' => 'sanitize_text_field'
-    )
-  );
+  if( class_exists( 'WooCommerce' )):
 
-  $wp_customize->add_control(
-    'set_popular_title',
-    array(
-      'label'       => __('Popular Products Title', 'woothe-marcelo'),
-      'description' => __('Popular Products Title', 'woothe-marcelo'),
-      'section'     => 'sec_home_page',
-      'type'        => 'text'
-    )
-  );
+    // Popular Products Title
 
-  // Popular Products Limit
+    $wp_customize->add_setting(
+      'set_popular_title',
+      array(
+        'type'              => 'theme_mod',
+        'default'           => '',
+        'sanitize_callback' => 'sanitize_text_field'
+      )
+    );
 
-  $wp_customize->add_setting(
-    'set_popular_max_num',
-    array(
-      'type'              => 'theme_mod',
-      'default'           => '',
-      'sanitize_callback' => 'absint'
-    )
-  );
+    $wp_customize->add_control(
+      'set_popular_title',
+      array(
+        'label'       => __('Popular Products Title', 'woothe-marcelo'),
+        'description' => __('Popular Products Title', 'woothe-marcelo'),
+        'section'     => 'sec_home_page',
+        'type'        => 'text'
+      )
+    );
 
-  $wp_customize->add_control(
-    'set_popular_max_num',
-    array(
-      'label'       => __('Popular Products Max Number', 'woothe-marcelo'),
-      'description' => __('Popular Products Max Number', 'woothe-marcelo'),
-      'section'     => 'sec_home_page',
-      'type'        => 'number'
-    )
-  );
+    // Popular Products Limit
 
-  // Popular Products Columns
+    $wp_customize->add_setting(
+      'set_popular_max_num',
+      array(
+        'type'              => 'theme_mod',
+        'default'           => '',
+        'sanitize_callback' => 'absint'
+      )
+    );
 
-  $wp_customize->add_setting(
-    'set_popular_max_col',
-    array(
-      'type'              => 'theme_mod',
-      'default'           => '',
-      'sanitize_callback' => 'absint'
-    )
-  );
+    $wp_customize->add_control(
+      'set_popular_max_num',
+      array(
+        'label'       => __('Popular Products Max Number', 'woothe-marcelo'),
+        'description' => __('Popular Products Max Number', 'woothe-marcelo'),
+        'section'     => 'sec_home_page',
+        'type'        => 'number'
+      )
+    );
 
-  $wp_customize->add_control(
-    'set_popular_max_col',
-    array(
-      'label'       => __('Popular Products Max Columns', 'woothe-marcelo'),
-      'description' => __('Popular Products Max Columns', 'woothe-marcelo'),
-      'section'     => 'sec_home_page',
-      'type'        => 'number'
-    )
-  );
+    // Popular Products Columns
 
-  // New Arrivals Title
-  $wp_customize->add_setting(
-    'set_new_arrivals_title',
-    array(
-      'type'              => 'theme_mod',
-      'default'           => '',
-      'sanitize_callback' => 'sanitize_text_field'
-    )
-  );
+    $wp_customize->add_setting(
+      'set_popular_max_col',
+      array(
+        'type'              => 'theme_mod',
+        'default'           => '',
+        'sanitize_callback' => 'absint'
+      )
+    );
 
-  $wp_customize->add_control(
-    'set_new_arrivals_title',
-    array(
-      'label'       => __('New Arrivals Title', 'woothe-marcelo'),
-      'description' => __('New Arrivals Title', 'woothe-marcelo'),
-      'section'     => 'sec_home_page',
-      'type'        => 'text'
-    )
-  );
+    $wp_customize->add_control(
+      'set_popular_max_col',
+      array(
+        'label'       => __('Popular Products Max Columns', 'woothe-marcelo'),
+        'description' => __('Popular Products Max Columns', 'woothe-marcelo'),
+        'section'     => 'sec_home_page',
+        'type'        => 'number'
+      )
+    );
 
-  // New Arrivals Limit
+    // New Arrivals Title
 
-  $wp_customize->add_setting(
-    'set_new_arrivals_max_num',
-    array(
-      'type'              => 'theme_mod',
-      'default'           => '',
-      'sanitize_callback' => 'absint'
-    )
-  );
+    $wp_customize->add_setting(
+      'set_new_arrivals_title',
+      array(
+        'type'              => 'theme_mod',
+        'default'           => '',
+        'sanitize_callback' => 'sanitize_text_field'
+      )
+    );
 
-  $wp_customize->add_control(
-    'set_new_arrivals_max_num',
-    array(
-      'label'       => __('New Arrivals Max Number', 'woothe-marcelo'),
-      'description' => __('New Arrivals Max Number', 'woothe-marcelo'),
-      'section'     => 'sec_home_page',
-      'type'        => 'number'
-    )
-  );
+    $wp_customize->add_control(
+      'set_new_arrivals_title',
+      array(
+        'label'       => __('New Arrivals Title', 'woothe-marcelo'),
+        'description' => __('New Arrivals Title', 'woothe-marcelo'),
+        'section'     => 'sec_home_page',
+        'type'        => 'text'
+      )
+    );
 
-  // New Arrivals Columns
+    // New Arrivals Limit
 
-  $wp_customize->add_setting(
-    'set_new_arrivals_max_col',
-    array(
-      'type'              => 'theme_mod',
-      'default'           => '',
-      'sanitize_callback' => 'absint'
-    )
-  );
+    $wp_customize->add_setting(
+      'set_new_arrivals_max_num',
+      array(
+        'type'              => 'theme_mod',
+        'default'           => '',
+        'sanitize_callback' => 'absint'
+      )
+    );
 
-  $wp_customize->add_control(
-    'set_new_arrivals_max_col',
-    array(
-      'label'       => __('New Arrivals Max Columns', 'woothe-marcelo'),
-      'description' => __('New Arrivals Max Columns', 'woothe-marcelo'),
-      'section'     => 'sec_home_page',
-      'type'        => 'number'
-    )
-  );
+    $wp_customize->add_control(
+      'set_new_arrivals_max_num',
+      array(
+        'label'       => __('New Arrivals Max Number', 'woothe-marcelo'),
+        'description' => __('New Arrivals Max Number', 'woothe-marcelo'),
+        'section'     => 'sec_home_page',
+        'type'        => 'number'
+      )
+    );
 
-  // Deal of the Week Checkbox
+    // New Arrivals Columns
 
-  $wp_customize->add_setting(
-    'set_deal_show',
-    array(
-      'type'    => 'theme_mod',
-      'default' => '',
-      'sanitize_callback' => 'woothe_marcelo_sanitize_checkbox',
-    )
-  );
+    $wp_customize->add_setting(
+      'set_new_arrivals_max_col',
+      array(
+        'type'              => 'theme_mod',
+        'default'           => '',
+        'sanitize_callback' => 'absint'
+      )
+    );
 
-  $wp_customize->add_control(
-    'set_deal_show',
-    array(
-      'label'   => __('Show Deal of the Week?', 'woothe-marcelo'),
-      'section' => 'sec_home_page',
-      'type'    => 'checkbox'
-    )
-  );
+    $wp_customize->add_control(
+      'set_new_arrivals_max_col',
+      array(
+        'label'       => __('New Arrivals Max Columns', 'woothe-marcelo'),
+        'description' => __('New Arrivals Max Columns', 'woothe-marcelo'),
+        'section'     => 'sec_home_page',
+        'type'        => 'number'
+      )
+    );
 
-  // Deal of the Week Title
-  $wp_customize->add_setting(
-    'set_deal_title',
-    array(
-      'type'              => 'theme_mod',
-      'default'           => '',
-      'sanitize_callback' => 'sanitize_text_field'
-    )
-  );
+    // Deal of the Week Checkbox
 
-  $wp_customize->add_control(
-    'set_deal_title',
-    array(
-      'label'       => __('Deal of the Week Title', 'woothe-marcelo'),
-      'description' => __('Deal of the Week Title', 'woothe-marcelo'),
-      'section'     => 'sec_home_page',
-      'type'        => 'text'
-    )
-  );
+    $wp_customize->add_setting(
+      'set_deal_show',
+      array(
+        'type'    => 'theme_mod',
+        'default' => '',
+        'sanitize_callback' => 'woothe_marcelo_sanitize_checkbox',
+      )
+    );
 
-  // Deal of the Week Product ID
+    $wp_customize->add_control(
+      'set_deal_show',
+      array(
+        'label'   => __('Show Deal of the Week?', 'woothe-marcelo'),
+        'section' => 'sec_home_page',
+        'type'    => 'checkbox'
+      )
+    );
 
-  $wp_customize->add_setting(
-    'set_deal',
-    array(
-      'type'              => 'theme_mod',
-      'default'           => '',
-      'sanitize_callback' => 'absint'
-    )
-  );
+    // Deal of the Week Title
 
-  $wp_customize->add_control(
-    'set_deal',
-    array(
-      'label'       => __('Deal of the Week Product ID', 'woothe-marcelo'),
-      'description' => __('Product ID to Display', 'woothe-marcelo'),
-      'section'     => 'sec_home_page',
-      'type'        => 'number'
-    )
-  );
+    $wp_customize->add_setting(
+      'set_deal_title',
+      array(
+        'type'              => 'theme_mod',
+        'default'           => '',
+        'sanitize_callback' => 'sanitize_text_field'
+      )
+    );
+
+    $wp_customize->add_control(
+      'set_deal_title',
+      array(
+        'label'       => __('Deal of the Week Title', 'woothe-marcelo'),
+        'description' => __('Deal of the Week Title', 'woothe-marcelo'),
+        'section'     => 'sec_home_page',
+        'type'        => 'text'
+      )
+    );
+
+    // Deal of the Week Product ID
+
+    $wp_customize->add_setting(
+      'set_deal',
+      array(
+        'type'              => 'theme_mod',
+        'default'           => '',
+        'sanitize_callback' => 'absint'
+      )
+    );
+
+    $wp_customize->add_control(
+      'set_deal',
+      array(
+        'label'       => __('Deal of the Week Product ID', 'woothe-marcelo'),
+        'description' => __('Product ID to Display', 'woothe-marcelo'),
+        'section'     => 'sec_home_page',
+        'type'        => 'number'
+      )
+    );
+
+  endif;
 
   // Blog Title
 

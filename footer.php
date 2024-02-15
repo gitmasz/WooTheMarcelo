@@ -30,7 +30,8 @@
 							<?php 
 								wp_nav_menu( 
 									array(
-										'theme_location' 	=> 'woothe_marcelo_footer_menu'
+										'theme_location' => 'woothe_marcelo_footer_menu',
+										'depth'          => 1,
 									) 
 								); 
 							?>

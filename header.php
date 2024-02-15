@@ -9,7 +9,11 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<?php wp_body_open(); ?>
+	<?php
+		if ( function_exists( 'wp_body_open' ) ) {
+			wp_body_open();
+		}
+	?>
 	<div id="page" class="site">
 		<header>
 			<section class="search">
@@ -21,7 +25,7 @@
 			</section>
 			<section class="top-bar">
 				<div class="container">
-					<div class="row">
+					<div class="row d-flex align-items-center">
 						<div class="brand col-md-3 col-12 col-lg-2 text-center text-md-left">
 							<?php if( has_custom_logo() ): ?>
 								<?php the_custom_logo(); ?>

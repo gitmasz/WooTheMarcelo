@@ -116,3 +116,21 @@ function woothe_marcelo_sidebars(){
     'after_title'   => '</h4>',
   ) );  
 }
+
+add_filter('body_class', 'woothe_marcelo_body_classes');
+function woothe_marcelo_body_classes($classes)
+{
+  if (!is_active_sidebar('woothe-marcelo-sidebar-1')) {
+    $classes[] = 'no-sidebar';
+  }
+
+  if (!is_active_sidebar('woothe-marcelo-sidebar-shop')) {
+    $classes[] = 'no-sidebar-shop';
+  }
+
+  if (!is_active_sidebar('woothe-marcelo-sidebar-footer1') && !is_active_sidebar('woothe-marcelo-sidebar-footer2') && !is_active_sidebar('woothe-marcelo-sidebar-footer3')) {
+    $classes[] = 'no-sidebar-footer';
+  }
+
+  return $classes;
+}
